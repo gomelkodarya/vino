@@ -5,9 +5,7 @@
   "main": "dev",
   "scripts": {
     "test": "npm i",
-    "build": "gulp",
-    "dev": "gulp watch",
-    "start": "gulp"
+    "build": "gulp"
   },
   "author": "",
   "license": "ISC",
