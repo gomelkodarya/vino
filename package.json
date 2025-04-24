@@ -24,9 +24,8 @@
     "gulp-verb": "^0.3.0",
     "gulp-webp": "^4.0.1",
     "install": "^0.13.0",
-    "node-sass": "^8.0.0",
     "npm": "^9.8.1",
-    "sass": "^1.57.1"
+    "sass": "^1.87.0"
   },
   "dependencies": {
     "gsap": "^3.12.5",
