@@ -4,8 +4,7 @@
   "description": "Dev",
   "main": "dev",
   "scripts": {
-    "test": "npm i",
-    "build": "gulp"
+    "test": "npm i"
   },
   "author": "",
   "license": "ISC",
