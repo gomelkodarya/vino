@@ -4,7 +4,10 @@
   "description": "Dev",
   "main": "dev",
   "scripts": {
-    "test": "npm i"
+    "test": "npm i",
+    "build": "gulp",
+    "dev": "gulp watch",
+    "start": "gulp"
   },
   "author": "",
   "license": "ISC",
