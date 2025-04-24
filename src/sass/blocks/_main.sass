@@ -1,0 +1,303 @@
+.preview
+    height: 480px
+    visibility: hidden
+    overflow: hidden
+    &__bg
+        width: 100%
+        height: 100%
+        object-fit: cover
+.promo
+    margin-top: -90px
+    @include sm 
+        margin-top: -68px
+    @include xxs 
+        margin-top: -40px
+    @include mini 
+        margin-top: -34px
+    &__title
+        visibility: hidden
+    &__wrap
+        min-height: 100vh
+        display: flex
+        align-items: center
+    &__inner
+        display: flex
+        align-items: stretch
+        justify-content: flex-end
+        gap: 30px
+        //visibility: hidden
+        @include sm 
+            margin-left: auto
+            max-width: 444px
+            flex-direction: column
+        @include xxs 
+            max-width: 100%
+    &__left
+        position: relative
+        flex: 1 1 auto
+        @include sm
+            display: none
+    &__left-inner
+        position: absolute
+        width: 100%
+        bottom: 0
+        img
+           width: 100%
+    &__left2
+        margin-top: 20px
+    &__info
+        flex: 0 0 380px
+        @include sm 
+            margin-right: 0
+            margin-bottom: 100px
+        @include xxs 
+            margin-bottom: 70px
+    &__img 
+        flex: 0 1 482px
+        visibility: hidden
+        img
+            height: 100%
+            object-fit: cover
+        @include sm 
+            height: 576px
+            flex: 0 1 auto
+            visibility: inherit
+            img 
+                width: 100%
+        @include xxs 
+            height: 360px
+
+.features
+    &__wrap
+        padding-left: 100px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 132px
+        @include md 
+            gap: 104px
+        @include sm 
+            padding-left: 70px
+            padding-right: 70px
+            grid-template-columns: 1fr
+            gap: 100px
+        @include xxs 
+            padding-left: 90px
+            padding-right: 90px
+            gap: 70px
+        @include mini 
+            padding-left: 40px
+            padding-right: 40px
+            align-items: center
+    &__item
+        @include sm 
+            width: 400px
+        @include xs 
+            width: 278px
+        @include xxs 
+            width: 100%
+            display: flex
+            flex-direction: column-reverse
+            align-items: center
+        @include mini
+            margin-left: auto
+            margin-right: auto
+            width: 210px
+        &_reverse
+            padding-top: 60px
+            @include sm 
+                margin-left: auto
+                padding-top: 0
+            @include xxs 
+                flex-direction: column
+    &__name
+        position: relative
+        margin-left: -100px
+        margin-top: -40px
+        max-width: 278px
+        font-family: $arina
+        font-size: 70px
+        line-height: 100%
+        text-align: center
+        @include sm 
+            margin-left: -70px
+        @include xxs 
+            margin-left: 0
+            margin-top: 0
+            margin-bottom: -23px
+            font-size: 44px
+        @include mini 
+            margin-bottom: -16px
+            font-size: 32px
+        &_bottom
+            margin-top: 0
+            margin-bottom: -37px
+            @include xxs 
+                margin-bottom: -23px
+            @include mini 
+                margin-bottom: -16px
+    &__img
+        img
+            width: 100%
+            object-fit: cover
+            min-height: 418px
+        @include xxs
+            width: 100%
+            img
+                min-height: 318px
+
+.tradition
+    padding-bottom: 342px
+    background: $main-color
+    @include sm 
+        padding-bottom: 614px
+    @include xxs 
+        padding-bottom: 140px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        @include sm 
+            position: relative
+            flex-direction: column
+    &__left
+        margin-right: 132px
+        position: relative
+        padding-left: calc((100% - 1200px) / 2)
+        display: flex
+        flex-direction: column
+        @include md
+            padding-left: 20px
+            margin-right: 70px
+        @include sm 
+            position: initial
+            width: 100%
+            padding-right: 20px
+        @include xxs 
+            padding-left: 15px
+            padding-right: 15px
+    &__left-content
+        width: 688px
+        @include md 
+            width: 628px
+        @include sm 
+            width: 100%
+    &__info 
+        @include sm 
+            margin-bottom: 100px
+        @include xxs 
+            margin-bottom: 70px
+    &__right
+        @media(min-width: 1920px)
+            margin-right: calc((100% - 1900px) / 2)
+        img
+            min-height: 500px
+            object-fit: cover
+        @include sm 
+            margin-left: auto
+            width: 464px
+            img 
+                width: 100%
+        @include xxs 
+            margin-right: auto
+            width: calc(100% - 30px)
+            
+    &__text
+        margin-left: auto
+    &__bottom
+        @media(min-width: 1920px)
+            width: 80%
+            height: 640px
+        position: absolute
+        width: 100%
+        height: 540px
+        right: 0
+        bottom: -120px
+        transform: translateY(100%)
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        @include sm 
+            height: 514px
+        @include xxs 
+            display: none
+
+.country
+    @media(min-width: 1920px)
+        padding-top: 610px
+    padding-top: 510px
+    @include sm 
+        padding-top: 200px
+    &__title
+        position: relative
+    &__wrap
+        display: flex
+        @include sm 
+            flex-direction: column
+    &__left
+        margin-right: 30px
+        display: flex
+        flex-direction: column
+        flex: 0 0 688px
+        @include md 
+            flex: 0 0 628px
+        @include sm 
+            margin-bottom: 100px
+            margin-right: 0
+            flex: 0 1 auto
+        @include xxs 
+            margin-bottom: 70px
+    &__img
+        margin-top: -200px
+        margin-left: auto
+        width: 55%
+        img
+            width: 100%
+            min-height: 480px
+            object-fit: cover
+        @include sm 
+            margin-top: -19%
+            margin-right: auto
+            width: 74%
+        @include xxs 
+            width: 100%
+            img
+                min-height: 300px
+            
+    &__right
+        padding-top: 360px
+        align-self: flex-end
+        @include sm 
+            padding-top: 0
+
+.story
+    background: $main-color
+
+.slider
+    overflow: hidden
+    width: 100vw
+    &__wrapper
+        display: flex
+        width: 100vw
+        height: 100vh
+    &__slide
+        flex: 0 0 100%
+        height: 100%
+        position: relative
+    &__img
+        width: 100%
+        height: 100%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__text
+        width: 85%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        font-size: 70px
+        font-family: $arina
+.parallax
+    overflow: hidden
